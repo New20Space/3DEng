@@ -1,0 +1,8 @@
+﻿  main.cpp
+D:\Main\C++\3DEng\3DEng\main.cpp(92,8): warning C4101: junk1: неиспользованная локальная переменная
+D:\Main\C++\3DEng\3DEng\main.cpp(187,31): warning C4838: Преобразование из "double" в "float" требует сужающего преобразования.
+D:\Main\C++\3DEng\3DEng\main.cpp(187,31): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+D:\Main\C++\3DEng\3DEng\main.cpp(233,16): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+D:\Main\C++\3DEng\3DEng\main.cpp(282,9): warning C4101: y: неиспользованная локальная переменная
+D:\Main\C++\3DEng\3DEng\main.cpp(282,6): warning C4101: x: неиспользованная локальная переменная
+  3DEng.vcxproj -> D:\Main\C++\3DEng\x64\Debug\3DEng.exe
