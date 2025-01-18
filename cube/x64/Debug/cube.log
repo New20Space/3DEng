@@ -1,18 +1,21 @@
 ﻿  Main.cpp
-D:\Main\C++\cube\cube\Main.cpp(143,9): warning C4101: y: неиспользованная локальная переменная
-D:\Main\C++\cube\cube\Main.cpp(143,6): warning C4101: x: неиспользованная локальная переменная
-D:\Main\C++\cube\cube\Main.cpp(321,10): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-D:\Main\C++\cube\cube\Main.cpp(351,33): warning C4244: =: преобразование "LONG" в "float", возможна потеря данных
-D:\Main\C++\cube\cube\Main.cpp(352,31): warning C4244: =: преобразование "LONG" в "float", возможна потеря данных
-D:\Main\C++\cube\cube\Main.cpp(353,29): warning C4244: =: преобразование "int" в "float", возможна потеря данных
-D:\Main\C++\cube\cube\Main.cpp(366,36): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-D:\Main\C++\cube\cube\Main.cpp(366,27): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-D:\Main\C++\cube\cube\Main.cpp(367,11): warning C4244: =: преобразование "double" в "int", возможна потеря данных
-D:\Main\C++\cube\cube\Main.cpp(393,24): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-D:\Main\C++\cube\cube\Main.cpp(393,15): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-D:\Main\C++\cube\cube\Main.cpp(398,9): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-D:\Main\C++\cube\cube\Main.cpp(401,24): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-D:\Main\C++\cube\cube\Main.cpp(401,15): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-D:\Main\C++\cube\cube\Main.cpp(409,9): warning C4101: y: неиспользованная локальная переменная
-D:\Main\C++\cube\cube\Main.cpp(409,6): warning C4101: x: неиспользованная локальная переменная
-  cube.vcxproj -> D:\Main\C++\cube\x64\Debug\cube.exe
+D:\Main\C++\cube render\cube\Main.cpp(257,8): warning C4101: junk1: неиспользованная локальная переменная
+D:\Main\C++\cube render\cube\Main.cpp(405,26): warning C4305: =: усечение из "double" в "float"
+D:\Main\C++\cube render\cube\Main.cpp(411,27): warning C4305: =: усечение из "double" в "float"
+D:\Main\C++\cube render\cube\Main.cpp(448,21): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
+D:\Main\C++\cube render\cube\Main.cpp(540,39): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Main\C++\cube render\cube\Main.cpp(543,38): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Main\C++\cube render\cube\Main.cpp(347,9): warning C4101: y: неиспользованная локальная переменная
+D:\Main\C++\cube render\cube\Main.cpp(347,6): warning C4101: x: неиспользованная локальная переменная
+D:\Main\C++\cube render\cube\Main.cpp(763,66): warning C4305: инициализация: усечение из "double" в "float"
+D:\Main\C++\cube render\cube\Main.cpp(824,10): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+D:\Main\C++\cube render\cube\Main.cpp(861,27): warning C4244: =: преобразование "LONG" в "float", возможна потеря данных
+D:\Main\C++\cube render\cube\Main.cpp(862,25): warning C4244: =: преобразование "LONG" в "float", возможна потеря данных
+D:\Main\C++\cube render\cube\Main.cpp(878,41): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+D:\Main\C++\cube render\cube\Main.cpp(878,30): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+D:\Main\C++\cube render\cube\Main.cpp(879,11): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+D:\Main\C++\cube render\cube\Main.cpp(904,29): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+D:\Main\C++\cube render\cube\Main.cpp(904,18): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+D:\Main\C++\cube render\cube\Main.cpp(911,9): warning C4101: y: неиспользованная локальная переменная
+D:\Main\C++\cube render\cube\Main.cpp(911,6): warning C4101: x: неиспользованная локальная переменная
+  cube.vcxproj -> D:\Main\C++\cube render\x64\Debug\cube.exe

@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\Main\C++\cube render\x64\Release\cube.exe</FullPath>
+      <FullPath>D:\Main\C++\Cube Engine 3\x64\Release\cube.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

@@ -1,22 +1,18 @@
-﻿  Main.cpp
-D:\Main\C++\cube render\cube\Main.cpp(346,21): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
-D:\Main\C++\cube render\cube\Main.cpp(247,9): warning C4101: y: неиспользованная локальная переменная
-D:\Main\C++\cube render\cube\Main.cpp(247,6): warning C4101: x: неиспользованная локальная переменная
-D:\Main\C++\cube render\cube\Main.cpp(503,8): warning C4101: junk1: неиспользованная локальная переменная
-D:\Main\C++\cube render\cube\Main.cpp(551,30): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-D:\Main\C++\cube render\cube\Main.cpp(606,10): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-D:\Main\C++\cube render\cube\Main.cpp(643,27): warning C4244: =: преобразование "LONG" в "float", возможна потеря данных
-D:\Main\C++\cube render\cube\Main.cpp(644,25): warning C4244: =: преобразование "LONG" в "float", возможна потеря данных
-D:\Main\C++\cube render\cube\Main.cpp(660,41): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-D:\Main\C++\cube render\cube\Main.cpp(660,30): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-D:\Main\C++\cube render\cube\Main.cpp(661,11): warning C4244: =: преобразование "double" в "int", возможна потеря данных
-D:\Main\C++\cube render\cube\Main.cpp(686,29): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-D:\Main\C++\cube render\cube\Main.cpp(686,18): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-D:\Main\C++\cube render\cube\Main.cpp(693,9): warning C4101: y: неиспользованная локальная переменная
-D:\Main\C++\cube render\cube\Main.cpp(693,6): warning C4101: x: неиспользованная локальная переменная
+﻿  Perlin_Noise.cpp
+D:\Main\C++\Cube Engine 3\cube\Perlin_Noise.cpp(13,47): warning C4244: аргумент: преобразование "double" в "_Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+D:\Main\C++\Cube Engine 3\cube\Perlin_Noise.cpp(26,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Main\C++\Cube Engine 3\cube\Perlin_Noise.cpp(26,16): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Main\C++\Cube Engine 3\cube\Perlin_Noise.cpp(30,27): warning C4244: аргумент: преобразование "float" в "const unsigned __int64", возможна потеря данных
+D:\Main\C++\Cube Engine 3\cube\Perlin_Noise.cpp(31,29): warning C4244: аргумент: преобразование "float" в "const unsigned __int64", возможна потеря данных
+D:\Main\C++\Cube Engine 3\cube\Perlin_Noise.cpp(32,35): warning C4244: аргумент: преобразование "float" в "const unsigned __int64", возможна потеря данных
+D:\Main\C++\Cube Engine 3\cube\Perlin_Noise.cpp(33,33): warning C4244: аргумент: преобразование "float" в "const unsigned __int64", возможна потеря данных
   Создание кода
-  3 of 1805 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+  4 of 3711 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    18 functions had inline decision re-evaluated but remain unchanged
+    20 functions had inline decision re-evaluated but remain unchanged
   Создание кода завершено
-  cube.vcxproj -> D:\Main\C++\cube render\x64\Release\cube.exe
+  cube.vcxproj -> D:\Main\C++\Cube Engine 3\x64\Release\cube.exe

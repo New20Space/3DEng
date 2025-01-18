@@ -1,0 +1,32 @@
+# Blender 4.0.1 MTL File: 'untitled.blend'
+# www.blender.org
+
+newmtl Material__48.001
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd D:/Main/C++/cube render/cadnav.com_model/Models_H1212A036/texture000.png
+
+newmtl Material__49.001
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd D:/Main/C++/cube render/cadnav.com_model/Models_H1212A036/texture001.png
+
+newmtl Material__50.001
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd D:/Main/C++/cube render/cadnav.com_model/Models_H1212A036/texture002.png
