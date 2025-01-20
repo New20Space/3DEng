@@ -1,21 +1,781 @@
-﻿  Main.cpp
-D:\Main\C++\cube render\cube\Main.cpp(257,8): warning C4101: junk1: неиспользованная локальная переменная
-D:\Main\C++\cube render\cube\Main.cpp(405,26): warning C4305: =: усечение из "double" в "float"
-D:\Main\C++\cube render\cube\Main.cpp(411,27): warning C4305: =: усечение из "double" в "float"
-D:\Main\C++\cube render\cube\Main.cpp(448,21): warning C4244: аргумент: преобразование "int" в "GLfloat", возможна потеря данных
-D:\Main\C++\cube render\cube\Main.cpp(540,39): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-D:\Main\C++\cube render\cube\Main.cpp(543,38): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-D:\Main\C++\cube render\cube\Main.cpp(347,9): warning C4101: y: неиспользованная локальная переменная
-D:\Main\C++\cube render\cube\Main.cpp(347,6): warning C4101: x: неиспользованная локальная переменная
-D:\Main\C++\cube render\cube\Main.cpp(763,66): warning C4305: инициализация: усечение из "double" в "float"
-D:\Main\C++\cube render\cube\Main.cpp(824,10): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-D:\Main\C++\cube render\cube\Main.cpp(861,27): warning C4244: =: преобразование "LONG" в "float", возможна потеря данных
-D:\Main\C++\cube render\cube\Main.cpp(862,25): warning C4244: =: преобразование "LONG" в "float", возможна потеря данных
-D:\Main\C++\cube render\cube\Main.cpp(878,41): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-D:\Main\C++\cube render\cube\Main.cpp(878,30): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-D:\Main\C++\cube render\cube\Main.cpp(879,11): warning C4244: =: преобразование "double" в "int", возможна потеря данных
-D:\Main\C++\cube render\cube\Main.cpp(904,29): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-D:\Main\C++\cube render\cube\Main.cpp(904,18): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-D:\Main\C++\cube render\cube\Main.cpp(911,9): warning C4101: y: неиспользованная локальная переменная
-D:\Main\C++\cube render\cube\Main.cpp(911,6): warning C4101: x: неиспользованная локальная переменная
-  cube.vcxproj -> D:\Main\C++\cube render\x64\Debug\cube.exe
+﻿  ECS.cpp
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(586,30): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(626,30): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(641,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(641,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(642,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(648,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(648,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(753,30): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(814,58): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(857,58): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(865,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(916,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(916,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(934,29): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(934,29): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(934,41): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(934,41): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(943,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(943,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(943,22): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(943,22): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(965,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(968,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(968,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,22): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,22): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,34): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,34): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(990,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(990,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(990,22): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(990,22): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1003,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1003,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1016,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1016,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1017,30): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1025,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1025,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1025,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1025,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1047,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1047,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1047,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1047,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1057,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1057,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1079,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1079,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1079,22): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1079,22): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1083,30): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1086,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::value_list_unique<entt::value_list<Value,Other...>>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1108,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1108,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1116,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1116,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1116,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1116,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1118,47): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1125,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1125,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1126,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1137,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1137,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1137,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1137,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1161,50): error C2039: "is_invocable": не является членом "std".
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\vector(26,1): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1161,80): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::is_applicable<Func,Tuple<Args...>>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1161,62): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1170,56): error C2039: "is_invocable": не является членом "std".
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\vector(26,1): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1170,86): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::is_applicable<Func,const Tuple<Args...>>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1170,68): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1178,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1192,62): error C2039: "is_invocable_r": не является членом "std".
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\vector(26,1): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1192,99): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::is_applicable_r<Ret,Func,std::tuple<_Rest...>>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1192,76): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1202,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1221,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1253,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1269,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1288,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1310,85): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1326,5): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1306,30): message : Сообщение диагностики возникло в созданной компилятором функции "bool entt::internal::dispatch_is_equality_comparable(void)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1328,12): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1306,30): message : Сообщение диагностики возникло в созданной компилятором функции "bool entt::internal::dispatch_is_equality_comparable(void)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1329,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1306,30): message : Сообщение диагностики возникло в созданной компилятором функции "bool entt::internal::dispatch_is_equality_comparable(void)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1334,12): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1306,30): message : Сообщение диагностики возникло в созданной компилятором функции "bool entt::internal::dispatch_is_equality_comparable(void)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1335,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1306,30): message : Сообщение диагностики возникло в созданной компилятором функции "bool entt::internal::dispatch_is_equality_comparable(void)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1366,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1466,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1466,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1469,29): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1469,29): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1671,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1670,44): message : Сообщение диагностики возникло в созданной компилятором функции "decltype(auto) entt::compressed_pair<First,Second>::get(void) noexcept"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1689,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::compressed_pair<First,Second>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1682,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1681,44): message : Сообщение диагностики возникло в созданной компилятором функции "decltype(auto) entt::compressed_pair<First,Second>::get(void) noexcept const"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,22): error C2988: неопознанное объявление или определение шаблона
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,22): error C2143: синтаксическая ошибка: отсутствие ")" перед "&&"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,22): error C2143: синтаксическая ошибка: отсутствие ";" перед "&&"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,17): error C2365: Type: переопределение; предыдущим определением было "параметр шаблона"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1696,19): message : см. объявление "Type"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,26): error C2988: неопознанное объявление или определение шаблона
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,26): error C2059: синтаксическая ошибка: ,
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,34): error C2059: синтаксическая ошибка: )
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,68): error C2065: Type: необъявленный идентификатор
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,60): error C2923: std::decay_t: "Type" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,68): message : см. объявление "Type"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,88): error C2065: Other: необъявленный идентификатор
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,80): error C2923: std::decay_t: "Other" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,88): message : см. объявление "Other"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1707,102): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1707,102): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1959,5): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1973,56): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1973,89): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1974,5): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1986,56): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1986,89): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1987,5): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1999,45): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1999,78): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2000,5): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2073,33): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2087,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::internal::uses_allocator_construction<Type>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2074,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2073,27): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::internal::uses_allocator_construction<Type>::args(const Allocator &,Params &&...) noexcept"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2079,13): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2073,27): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::internal::uses_allocator_construction<Type>::args(const Allocator &,Params &&...) noexcept"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2097,18): error C2039: "apply": не является членом "std".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1713,11): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2094,27): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::internal::uses_allocator_construction<std::pair<_Ty1,_Ty2>>::args(const Allocator &,std::piecewise_construct_t,First &&,Second &&) noexcept"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2120,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::internal::uses_allocator_construction<std::pair<_Ty1,_Ty2>>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2098,18): error C2039: "apply": не является членом "std".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1713,11): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2094,27): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::internal::uses_allocator_construction<std::pair<_Ty1,_Ty2>>::args(const Allocator &,std::piecewise_construct_t,First &&,Second &&) noexcept"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2158,17): error C2039: "make_from_tuple": не является членом "std".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1713,11): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2177,17): error C2039: "apply": не является членом "std".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1713,11): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3732,40): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4156,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4020,46): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4038,39): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3427,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3424,24): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::insert_or_do_nothing(Other &&,Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3442,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3439,24): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::insert_or_overwrite(Other &&,Arg &&)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3455,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3733,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3732,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_map_iterator<vector<entt::internal::dense_map_node<Key,Type>,allocator_traits<Allocator>::rebind_alloc<entt::internal::dense_map_node<Key,Type>>>::iterator>,bool> entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3735,16): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3732,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_map_iterator<vector<entt::internal::dense_map_node<Key,Type>,allocator_traits<Allocator>::rebind_alloc<entt::internal::dense_map_node<Key,Type>>>::iterator>,bool> entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3737,16): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3732,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_map_iterator<vector<entt::internal::dense_map_node<Key,Type>,allocator_traits<Allocator>::rebind_alloc<entt::internal::dense_map_node<Key,Type>>>::iterator>,bool> entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3743,16): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3732,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_map_iterator<vector<entt::internal::dense_map_node<Key,Type>,allocator_traits<Allocator>::rebind_alloc<entt::internal::dense_map_node<Key,Type>>>::iterator>,bool> entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4112,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4964,46): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5100,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::dense_set<Type,Hash,KeyEqual,Allocator>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4982,39): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4438,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4435,24): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::dense_set<Type,Hash,KeyEqual,Allocator>::insert_or_do_nothing(Other &&)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4450,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4740,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4739,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_set_iterator<vector<std::pair<size_t,Type>,allocator_traits<Allocator>::rebind_alloc<std::pair<size_t,Type>>>::iterator>,bool> entt::dense_set<Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4740,50): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4739,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_set_iterator<vector<std::pair<size_t,Type>,allocator_traits<Allocator>::rebind_alloc<std::pair<size_t,Type>>>::iterator>,bool> entt::dense_set<Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4746,16): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4739,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_set_iterator<vector<std::pair<size_t,Type>,allocator_traits<Allocator>::rebind_alloc<std::pair<size_t,Type>>>::iterator>,bool> entt::dense_set<Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5056,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5146,100): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5208,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::internal::table_iterator<It...>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5151,37): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5160,37): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5169,46): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5284,9): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5555,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::basic_table<Container...>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5284,1): fatal  error C1003: число ошибок превышает 100; остановка компиляции
+  Main.cpp
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(586,30): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(626,30): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(641,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(641,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(642,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(648,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(648,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(753,30): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(814,58): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(857,58): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(865,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(916,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(916,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(934,29): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(934,29): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(934,41): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(934,41): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(943,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(943,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(943,22): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(943,22): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(965,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(968,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(968,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,22): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,22): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,34): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,34): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(990,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(990,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(990,22): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(990,22): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1003,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1003,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1016,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1016,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1017,30): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1025,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1025,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1025,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1025,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1047,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1047,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1047,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1047,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1057,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1057,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1079,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1079,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1079,22): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1079,22): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1083,30): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1086,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::value_list_unique<entt::value_list<Value,Other...>>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1108,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1108,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1116,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1116,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1116,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1116,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1118,47): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1125,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1125,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1126,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1137,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1137,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1137,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1137,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1161,50): error C2039: "is_invocable": не является членом "std".
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\vector(26,1): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1161,80): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::is_applicable<Func,Tuple<Args...>>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1161,62): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1170,56): error C2039: "is_invocable": не является членом "std".
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\vector(26,1): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1170,86): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::is_applicable<Func,const Tuple<Args...>>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1170,68): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1178,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1192,62): error C2039: "is_invocable_r": не является членом "std".
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\vector(26,1): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1192,99): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::is_applicable_r<Ret,Func,std::tuple<_Rest...>>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1192,76): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1202,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1221,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1253,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1269,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1288,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1310,85): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1326,5): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1306,30): message : Сообщение диагностики возникло в созданной компилятором функции "bool entt::internal::dispatch_is_equality_comparable(void)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1328,12): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1306,30): message : Сообщение диагностики возникло в созданной компилятором функции "bool entt::internal::dispatch_is_equality_comparable(void)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1329,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1306,30): message : Сообщение диагностики возникло в созданной компилятором функции "bool entt::internal::dispatch_is_equality_comparable(void)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1334,12): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1306,30): message : Сообщение диагностики возникло в созданной компилятором функции "bool entt::internal::dispatch_is_equality_comparable(void)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1335,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1306,30): message : Сообщение диагностики возникло в созданной компилятором функции "bool entt::internal::dispatch_is_equality_comparable(void)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1366,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1466,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1466,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1469,29): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1469,29): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1671,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1670,44): message : Сообщение диагностики возникло в созданной компилятором функции "decltype(auto) entt::compressed_pair<First,Second>::get(void) noexcept"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1689,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::compressed_pair<First,Second>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1682,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1681,44): message : Сообщение диагностики возникло в созданной компилятором функции "decltype(auto) entt::compressed_pair<First,Second>::get(void) noexcept const"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,22): error C2988: неопознанное объявление или определение шаблона
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,22): error C2143: синтаксическая ошибка: отсутствие ")" перед "&&"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,22): error C2143: синтаксическая ошибка: отсутствие ";" перед "&&"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,17): error C2365: Type: переопределение; предыдущим определением было "параметр шаблона"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1696,19): message : см. объявление "Type"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,26): error C2988: неопознанное объявление или определение шаблона
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,26): error C2059: синтаксическая ошибка: ,
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,34): error C2059: синтаксическая ошибка: )
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,68): error C2065: Type: необъявленный идентификатор
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,60): error C2923: std::decay_t: "Type" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,68): message : см. объявление "Type"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,88): error C2065: Other: необъявленный идентификатор
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,80): error C2923: std::decay_t: "Other" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,88): message : см. объявление "Other"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1707,102): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1707,102): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1959,5): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1973,56): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1973,89): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1974,5): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1986,56): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1986,89): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1987,5): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1999,45): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1999,78): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2000,5): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2073,33): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2087,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::internal::uses_allocator_construction<Type>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2074,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2073,27): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::internal::uses_allocator_construction<Type>::args(const Allocator &,Params &&...) noexcept"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2079,13): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2073,27): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::internal::uses_allocator_construction<Type>::args(const Allocator &,Params &&...) noexcept"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2097,18): error C2039: "apply": не является членом "std".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1713,11): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2094,27): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::internal::uses_allocator_construction<std::pair<_Ty1,_Ty2>>::args(const Allocator &,std::piecewise_construct_t,First &&,Second &&) noexcept"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2120,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::internal::uses_allocator_construction<std::pair<_Ty1,_Ty2>>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2098,18): error C2039: "apply": не является членом "std".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1713,11): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2094,27): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::internal::uses_allocator_construction<std::pair<_Ty1,_Ty2>>::args(const Allocator &,std::piecewise_construct_t,First &&,Second &&) noexcept"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2158,17): error C2039: "make_from_tuple": не является членом "std".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1713,11): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2177,17): error C2039: "apply": не является членом "std".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1713,11): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3732,40): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4156,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4020,46): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4038,39): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3427,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3424,24): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::insert_or_do_nothing(Other &&,Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3442,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3439,24): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::insert_or_overwrite(Other &&,Arg &&)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3455,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3733,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3732,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_map_iterator<vector<entt::internal::dense_map_node<Key,Type>,allocator_traits<Allocator>::rebind_alloc<entt::internal::dense_map_node<Key,Type>>>::iterator>,bool> entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3735,16): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3732,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_map_iterator<vector<entt::internal::dense_map_node<Key,Type>,allocator_traits<Allocator>::rebind_alloc<entt::internal::dense_map_node<Key,Type>>>::iterator>,bool> entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3737,16): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3732,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_map_iterator<vector<entt::internal::dense_map_node<Key,Type>,allocator_traits<Allocator>::rebind_alloc<entt::internal::dense_map_node<Key,Type>>>::iterator>,bool> entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3743,16): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3732,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_map_iterator<vector<entt::internal::dense_map_node<Key,Type>,allocator_traits<Allocator>::rebind_alloc<entt::internal::dense_map_node<Key,Type>>>::iterator>,bool> entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4112,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4964,46): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5100,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::dense_set<Type,Hash,KeyEqual,Allocator>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4982,39): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4438,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4435,24): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::dense_set<Type,Hash,KeyEqual,Allocator>::insert_or_do_nothing(Other &&)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4450,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4740,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4739,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_set_iterator<vector<std::pair<size_t,Type>,allocator_traits<Allocator>::rebind_alloc<std::pair<size_t,Type>>>::iterator>,bool> entt::dense_set<Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4740,50): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4739,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_set_iterator<vector<std::pair<size_t,Type>,allocator_traits<Allocator>::rebind_alloc<std::pair<size_t,Type>>>::iterator>,bool> entt::dense_set<Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4746,16): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4739,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_set_iterator<vector<std::pair<size_t,Type>,allocator_traits<Allocator>::rebind_alloc<std::pair<size_t,Type>>>::iterator>,bool> entt::dense_set<Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5056,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5146,100): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5208,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::internal::table_iterator<It...>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5151,37): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5160,37): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5169,46): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5284,9): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5555,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::basic_table<Container...>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5284,1): fatal  error C1003: число ошибок превышает 100; остановка компиляции
+  Math3D.cpp
+D:\Main\C++\Cube Engine 3\cube\Math3D.cpp(11,28): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+D:\Main\C++\Cube Engine 3\cube\Math3D.cpp(11,41): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+  loader.cpp
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(586,30): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(626,30): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(641,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(641,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(642,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(648,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(648,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(753,30): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(814,58): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(857,58): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(865,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(916,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(916,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(934,29): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(934,29): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(934,41): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(934,41): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(943,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(943,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(943,22): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(943,22): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(965,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(968,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(968,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,22): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,22): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,34): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,34): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(990,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(990,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(990,22): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(990,22): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1003,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1003,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1016,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1016,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1017,30): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1025,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1025,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1025,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1025,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1047,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1047,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1047,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1047,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1057,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1057,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1079,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1079,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1079,22): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1079,22): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1083,30): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1086,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::value_list_unique<entt::value_list<Value,Other...>>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1108,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1108,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1116,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1116,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1116,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1116,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1118,47): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1125,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1125,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1126,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1137,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1137,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1137,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1137,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1161,50): error C2039: "is_invocable": не является членом "std".
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\vector(26,1): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1161,80): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::is_applicable<Func,Tuple<Args...>>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1161,62): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1170,56): error C2039: "is_invocable": не является членом "std".
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\vector(26,1): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1170,86): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::is_applicable<Func,const Tuple<Args...>>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1170,68): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1178,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1192,62): error C2039: "is_invocable_r": не является членом "std".
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\vector(26,1): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1192,99): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::is_applicable_r<Ret,Func,std::tuple<_Rest...>>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1192,76): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1202,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1221,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1253,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1269,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1288,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1310,85): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1326,5): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1306,30): message : Сообщение диагностики возникло в созданной компилятором функции "bool entt::internal::dispatch_is_equality_comparable(void)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1328,12): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1306,30): message : Сообщение диагностики возникло в созданной компилятором функции "bool entt::internal::dispatch_is_equality_comparable(void)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1329,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1306,30): message : Сообщение диагностики возникло в созданной компилятором функции "bool entt::internal::dispatch_is_equality_comparable(void)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1334,12): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1306,30): message : Сообщение диагностики возникло в созданной компилятором функции "bool entt::internal::dispatch_is_equality_comparable(void)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1335,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1306,30): message : Сообщение диагностики возникло в созданной компилятором функции "bool entt::internal::dispatch_is_equality_comparable(void)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1366,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1466,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1466,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1469,29): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1469,29): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1671,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1670,44): message : Сообщение диагностики возникло в созданной компилятором функции "decltype(auto) entt::compressed_pair<First,Second>::get(void) noexcept"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1689,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::compressed_pair<First,Second>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1682,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1681,44): message : Сообщение диагностики возникло в созданной компилятором функции "decltype(auto) entt::compressed_pair<First,Second>::get(void) noexcept const"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,22): error C2988: неопознанное объявление или определение шаблона
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,22): error C2143: синтаксическая ошибка: отсутствие ")" перед "&&"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,22): error C2143: синтаксическая ошибка: отсутствие ";" перед "&&"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,17): error C2365: Type: переопределение; предыдущим определением было "параметр шаблона"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1696,19): message : см. объявление "Type"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,26): error C2988: неопознанное объявление или определение шаблона
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,26): error C2059: синтаксическая ошибка: ,
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,34): error C2059: синтаксическая ошибка: )
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,68): error C2065: Type: необъявленный идентификатор
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,60): error C2923: std::decay_t: "Type" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,68): message : см. объявление "Type"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,88): error C2065: Other: необъявленный идентификатор
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,80): error C2923: std::decay_t: "Other" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,88): message : см. объявление "Other"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1707,102): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1707,102): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1959,5): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1973,56): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1973,89): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1974,5): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1986,56): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1986,89): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1987,5): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1999,45): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1999,78): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2000,5): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2073,33): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2087,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::internal::uses_allocator_construction<Type>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2074,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2073,27): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::internal::uses_allocator_construction<Type>::args(const Allocator &,Params &&...) noexcept"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2079,13): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2073,27): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::internal::uses_allocator_construction<Type>::args(const Allocator &,Params &&...) noexcept"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2097,18): error C2039: "apply": не является членом "std".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1713,11): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2094,27): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::internal::uses_allocator_construction<std::pair<_Ty1,_Ty2>>::args(const Allocator &,std::piecewise_construct_t,First &&,Second &&) noexcept"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2120,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::internal::uses_allocator_construction<std::pair<_Ty1,_Ty2>>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2098,18): error C2039: "apply": не является членом "std".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1713,11): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2094,27): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::internal::uses_allocator_construction<std::pair<_Ty1,_Ty2>>::args(const Allocator &,std::piecewise_construct_t,First &&,Second &&) noexcept"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2158,17): error C2039: "make_from_tuple": не является членом "std".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1713,11): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2177,17): error C2039: "apply": не является членом "std".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1713,11): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3732,40): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4156,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4020,46): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4038,39): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3427,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3424,24): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::insert_or_do_nothing(Other &&,Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3442,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3439,24): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::insert_or_overwrite(Other &&,Arg &&)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3455,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3733,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3732,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_map_iterator<vector<entt::internal::dense_map_node<Key,Type>,allocator_traits<Allocator>::rebind_alloc<entt::internal::dense_map_node<Key,Type>>>::iterator>,bool> entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3735,16): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3732,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_map_iterator<vector<entt::internal::dense_map_node<Key,Type>,allocator_traits<Allocator>::rebind_alloc<entt::internal::dense_map_node<Key,Type>>>::iterator>,bool> entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3737,16): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3732,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_map_iterator<vector<entt::internal::dense_map_node<Key,Type>,allocator_traits<Allocator>::rebind_alloc<entt::internal::dense_map_node<Key,Type>>>::iterator>,bool> entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3743,16): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3732,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_map_iterator<vector<entt::internal::dense_map_node<Key,Type>,allocator_traits<Allocator>::rebind_alloc<entt::internal::dense_map_node<Key,Type>>>::iterator>,bool> entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4112,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4964,46): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5100,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::dense_set<Type,Hash,KeyEqual,Allocator>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4982,39): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4438,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4435,24): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::dense_set<Type,Hash,KeyEqual,Allocator>::insert_or_do_nothing(Other &&)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4450,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4740,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4739,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_set_iterator<vector<std::pair<size_t,Type>,allocator_traits<Allocator>::rebind_alloc<std::pair<size_t,Type>>>::iterator>,bool> entt::dense_set<Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4740,50): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4739,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_set_iterator<vector<std::pair<size_t,Type>,allocator_traits<Allocator>::rebind_alloc<std::pair<size_t,Type>>>::iterator>,bool> entt::dense_set<Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4746,16): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4739,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_set_iterator<vector<std::pair<size_t,Type>,allocator_traits<Allocator>::rebind_alloc<std::pair<size_t,Type>>>::iterator>,bool> entt::dense_set<Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5056,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5146,100): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5208,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::internal::table_iterator<It...>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5151,37): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5160,37): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5169,46): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5284,9): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5555,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::basic_table<Container...>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5284,1): fatal  error C1003: число ошибок превышает 100; остановка компиляции
+  Perlin_Noise.cpp
+D:\Main\C++\Cube Engine 3\cube\Perlin_Noise.cpp(13,47): warning C4244: аргумент: преобразование "double" в "_Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+D:\Main\C++\Cube Engine 3\cube\Perlin_Noise.cpp(26,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Main\C++\Cube Engine 3\cube\Perlin_Noise.cpp(26,16): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Main\C++\Cube Engine 3\cube\Perlin_Noise.cpp(30,27): warning C4244: аргумент: преобразование "float" в "const unsigned __int64", возможна потеря данных
+D:\Main\C++\Cube Engine 3\cube\Perlin_Noise.cpp(31,29): warning C4244: аргумент: преобразование "float" в "const unsigned __int64", возможна потеря данных
+D:\Main\C++\Cube Engine 3\cube\Perlin_Noise.cpp(32,35): warning C4244: аргумент: преобразование "float" в "const unsigned __int64", возможна потеря данных
+D:\Main\C++\Cube Engine 3\cube\Perlin_Noise.cpp(33,33): warning C4244: аргумент: преобразование "float" в "const unsigned __int64", возможна потеря данных
+  render.cpp
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(586,30): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(626,30): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(641,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(641,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(642,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(648,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(648,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(753,30): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(814,58): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(857,58): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(865,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(916,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(916,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(934,29): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(934,29): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(934,41): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(934,41): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(943,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(943,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(943,22): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(943,22): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(965,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(968,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(968,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,22): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,22): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,34): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(977,34): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(990,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(990,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(990,22): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(990,22): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1003,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1003,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1016,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1016,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1017,30): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1025,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1025,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1025,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1025,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1047,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1047,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1047,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1047,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1057,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1057,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1079,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1079,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1079,22): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1079,22): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1083,30): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1086,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::value_list_unique<entt::value_list<Value,Other...>>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1108,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1108,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1116,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1116,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1116,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1116,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1118,47): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1125,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1125,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1126,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1137,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1137,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1137,25): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1137,25): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1161,50): error C2039: "is_invocable": не является членом "std".
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\functional(32,1): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1161,80): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::is_applicable<Func,Tuple<Args...>>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1161,62): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1170,56): error C2039: "is_invocable": не является членом "std".
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\functional(32,1): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1170,86): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::is_applicable<Func,const Tuple<Args...>>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1170,68): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1178,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1192,62): error C2039: "is_invocable_r": не является членом "std".
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\functional(32,1): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1192,99): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::is_applicable_r<Ret,Func,std::tuple<_Rest...>>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1192,76): error C2143: синтаксическая ошибка: отсутствие "," перед "<"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1202,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1221,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1253,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1269,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1288,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1310,85): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1326,5): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1306,30): message : Сообщение диагностики возникло в созданной компилятором функции "bool entt::internal::dispatch_is_equality_comparable(void)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1328,12): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1306,30): message : Сообщение диагностики возникло в созданной компилятором функции "bool entt::internal::dispatch_is_equality_comparable(void)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1329,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1306,30): message : Сообщение диагностики возникло в созданной компилятором функции "bool entt::internal::dispatch_is_equality_comparable(void)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1334,12): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1306,30): message : Сообщение диагностики возникло в созданной компилятором функции "bool entt::internal::dispatch_is_equality_comparable(void)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1335,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1306,30): message : Сообщение диагностики возникло в созданной компилятором функции "bool entt::internal::dispatch_is_equality_comparable(void)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1366,23): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1466,10): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1466,10): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1469,29): error C3533: параметр не может иметь тип, содержащий "auto"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1469,29): message : "auto" в параметрах нетипового шаблона требует как минимум "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1671,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1670,44): message : Сообщение диагностики возникло в созданной компилятором функции "decltype(auto) entt::compressed_pair<First,Second>::get(void) noexcept"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1689,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::compressed_pair<First,Second>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1682,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1681,44): message : Сообщение диагностики возникло в созданной компилятором функции "decltype(auto) entt::compressed_pair<First,Second>::get(void) noexcept const"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,22): error C2988: неопознанное объявление или определение шаблона
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,22): error C2143: синтаксическая ошибка: отсутствие ")" перед "&&"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,22): error C2143: синтаксическая ошибка: отсутствие ";" перед "&&"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,17): error C2365: Type: переопределение; предыдущим определением было "параметр шаблона"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1696,19): message : см. объявление "Type"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,26): error C2988: неопознанное объявление или определение шаблона
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,26): error C2059: синтаксическая ошибка: ,
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,34): error C2059: синтаксическая ошибка: )
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,68): error C2065: Type: необъявленный идентификатор
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,60): error C2923: std::decay_t: "Type" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,68): message : см. объявление "Type"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,88): error C2065: Other: необъявленный идентификатор
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,80): error C2923: std::decay_t: "Other" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1697,88): message : см. объявление "Other"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1707,102): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1707,102): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1959,5): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1973,56): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1973,89): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1974,5): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1986,56): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1986,89): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1987,5): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1999,45): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1999,78): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2000,5): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2073,33): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2087,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::internal::uses_allocator_construction<Type>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2074,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2073,27): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::internal::uses_allocator_construction<Type>::args(const Allocator &,Params &&...) noexcept"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2079,13): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2073,27): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::internal::uses_allocator_construction<Type>::args(const Allocator &,Params &&...) noexcept"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2097,18): error C2039: "apply": не является членом "std".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1713,11): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2094,27): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::internal::uses_allocator_construction<std::pair<_Ty1,_Ty2>>::args(const Allocator &,std::piecewise_construct_t,First &&,Second &&) noexcept"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2120,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::internal::uses_allocator_construction<std::pair<_Ty1,_Ty2>>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2098,18): error C2039: "apply": не является членом "std".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1713,11): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2094,27): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::internal::uses_allocator_construction<std::pair<_Ty1,_Ty2>>::args(const Allocator &,std::piecewise_construct_t,First &&,Second &&) noexcept"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2158,17): error C2039: "make_from_tuple": не является членом "std".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1713,11): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(2177,17): error C2039: "apply": не является членом "std".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(1713,11): message : см. объявление "std"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3732,40): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4156,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4020,46): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4038,39): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3427,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3424,24): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::insert_or_do_nothing(Other &&,Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3442,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3439,24): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::insert_or_overwrite(Other &&,Arg &&)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3455,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3733,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3732,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_map_iterator<vector<entt::internal::dense_map_node<Key,Type>,allocator_traits<Allocator>::rebind_alloc<entt::internal::dense_map_node<Key,Type>>>::iterator>,bool> entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3735,16): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3732,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_map_iterator<vector<entt::internal::dense_map_node<Key,Type>,allocator_traits<Allocator>::rebind_alloc<entt::internal::dense_map_node<Key,Type>>>::iterator>,bool> entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3737,16): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3732,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_map_iterator<vector<entt::internal::dense_map_node<Key,Type>,allocator_traits<Allocator>::rebind_alloc<entt::internal::dense_map_node<Key,Type>>>::iterator>,bool> entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3743,16): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(3732,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_map_iterator<vector<entt::internal::dense_map_node<Key,Type>,allocator_traits<Allocator>::rebind_alloc<entt::internal::dense_map_node<Key,Type>>>::iterator>,bool> entt::dense_map<Key,Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4112,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4964,46): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5100,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::dense_set<Type,Hash,KeyEqual,Allocator>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4982,39): warning C5051: для атрибута "maybe_unused" требуется по меньшей мере "/std:c++17"; игнорируется
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4438,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4435,24): message : Сообщение диагностики возникло в созданной компилятором функции "auto entt::dense_set<Type,Hash,KeyEqual,Allocator>::insert_or_do_nothing(Other &&)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4450,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4740,9): warning C4984: "if constexpr" — расширение языка C++17
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4739,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_set_iterator<vector<std::pair<size_t,Type>,allocator_traits<Allocator>::rebind_alloc<std::pair<size_t,Type>>>::iterator>,bool> entt::dense_set<Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4740,50): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4739,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_set_iterator<vector<std::pair<size_t,Type>,allocator_traits<Allocator>::rebind_alloc<std::pair<size_t,Type>>>::iterator>,bool> entt::dense_set<Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4746,16): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(4739,31): message : Сообщение диагностики возникло в созданной компилятором функции "std::pair<entt::internal::dense_set_iterator<vector<std::pair<size_t,Type>,allocator_traits<Allocator>::rebind_alloc<std::pair<size_t,Type>>>::iterator>,bool> entt::dense_set<Type,Hash,KeyEqual,Allocator>::emplace(Args &&...)"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5056,12): error C2429: для функция языка "Инструкции INIT в if/switch" нужен флаг компилятора "/std:c++17"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5146,100): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5208,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::internal::table_iterator<It...>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5151,37): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5160,37): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5169,46): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5284,9): error C7518: Выражения свертки требуют как минимум "/std:c++17".
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5555,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "entt::basic_table<Container...>"
+D:\Main\C++\Cube Engine 3\cube\Include\Entt\entt.hpp(5284,1): fatal  error C1003: число ошибок превышает 100; остановка компиляции
+  ETexture.cpp
+  Создание кода...

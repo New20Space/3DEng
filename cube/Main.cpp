@@ -55,36 +55,43 @@ ECS M_ECS;
 render M_R;
 Loader M_L;
 
+void ApplyNoise(Mesh& MP,int num_vertex) {//to a plane
+	float MW = MP.MObj.Max.x - MP.MObj.Min.x;
+	float MH = MP.MObj.Max.z - MP.MObj.Min.z;
 
+	float r_w = MW / MP.Noise.Width; //ratio 
+	float r_h = MH / MP.Noise.Height;
+
+	float s_w = MP.MObj.Min.x;//shift
+	float s_h = MP.MObj.Min.z;
+
+	float x = (MP.MObj.tris[num_vertex].x - s_w)/r_w;
+	float y = (MP.MObj.tris[num_vertex].z - s_h) / r_h;
+
+	float N = MP.Noise.Get_Noise(x, y);
+
+	float red = 1 - N;
+	float green = 1 - N;
+	float blue =  1;
+	MP.MObj.color[num_vertex] = { red,green,blue };
+	MP.MObj.tris[num_vertex].y = N;
+}
 
 void Start() {
-	
-M_ECS.reg.view<Mesh>().each([&](auto entity, Mesh& MP) {
-			if (MP.A_Noise) {
-				MP.MObj.tris.clear();
-				MP.MObj.color.clear();
-				MP.MObj.normal.clear();
-
-				//MP.Noise.Animate(0.1);
-				for (float y = 0; y < MP.Noise.Height; y += 0.01) {
-					for (float x = 0; x < MP.Noise.Width; x += 0.01) {
-						float N = MP.Noise.Get_Noise(x, y);
-
-						float red =   1 - N;
-						float green = 1 - N;
-						float blue =  1;
-
-
-
-						MP.MObj.tris.push_back({ x * 20 - 25 , y * 20 - 5,0 });//(N*2-1) * 50
-						MP.MObj.color.push_back({ red,green,blue });
-						MP.MObj.normal.push_back({ 0,0,1 });
-
-					}
-				}
-
+	Perlin_Noise* Map;
+	M_ECS.reg.view<Mesh>().each([&](auto entity, Mesh& MP) {
+		if (MP.A_Noise) {
+			
+			for (int i = 0; i < MP.MObj.color.size(); i++)
+			{	
+				ApplyNoise(MP, i);
 			}
-			});
+
+			Map = &MP.Noise;
+
+		}
+
+		});
 
 }
 float a = PI / 4 + PI;
@@ -113,31 +120,6 @@ void main_dis() {
 		ImGui_ImplOpenGL3_NewFrame();
 		ImGui_ImplGLUT_NewFrame();
 		ImGui::NewFrame();
-
-		//M_ECS.reg.view<Mesh>().each([&](auto entity, Mesh& MP) {
-		//	if (MP.A_Noise) {
-		//		MP.MObj.tris.clear();
-		//		MP.MObj.color.clear();
-		//		MP.MObj.normal.clear();
-
-		//		for (float y = 0; y < 1; y += 0.01) {
-		//			for (float x = 0; x < 1; x += 0.01) {
-		//				float N = MP.Noise.Cell(Vec2f(x, y), a, b, c, d);
-
-		//				float red = N;
-		//				float green = N;
-		//				float blue = N ;
-
-
-
-		//				MP.MObj.tris.push_back({ x * 20 - 25 , y * 20 - 5 , 0 });//(N ) * 50
-		//				MP.MObj.color.push_back({ red,green,blue });
-		//				MP.MObj.normal.push_back({ 0,0,1 });
-		//			}
-		//		}
-		//		cout<< MP.Noise.Cell(Vec2f(0.5, 0.5), a, b, c, d)<<endl;
-		//	}
-		//	});
 
 		M_R.InitCamera();
 		M_R.MovePlayer();
@@ -176,35 +158,40 @@ void ECS_Init()
 	M_ECS.AddÑamera(CT,CS);
 
 
+
+
 	Transform OTP;
+	OTP.Scale = { 5.0,3.0,5.0 };
+
 	Mesh MP;
-	MP.primitive = GL_POINTS;
+	MP.Path = "Model/plane.obj";
 
 	srand(306);
 	MP.A_Noise = 1;
-	MP.Noise.Init(20.1, 20.1);
-
+	MP.Noise.Init(10.1, 10.1);
+	
 	M_ECS.AddObj(OTP, MP);
+
 
 
 	Transform OT;
 	Mesh M;
-	M.Path = "din.obj";
+	M.Path = "Model/din.obj";
 
 	M_ECS.AddObj(OT,M);
 
 	
 
 
-	//Transform OTP;
-	//Mesh MP;
+	//Transform PImg;
+	//Mesh MImg;
 
 	//int imgW, imgH, n;
 	//int num_ch = 3;
-	//unsigned char* data = stbi_load("test.png", &imgW, &imgH, &n, num_ch);
+	//unsigned char* data = stbi_load("Img/test.png", &imgW, &imgH, &n, num_ch);
 
 
-	//MP.primitive = GL_POINTS;
+	//MImg.primitive = GL_POINTS;
 
 	//int idx = 0;
 	//for (int y = 0; y < imgH; y++) {
@@ -214,14 +201,14 @@ void ECS_Init()
 	//		float blue = data[idx * num_ch + 2] / 255.0;
 	//		idx++;
 
-	//		MP.MObj.tris.push_back({ red * 30,green * 30,blue * 30 });
-	//		MP.MObj.color.push_back({ red,green,blue });
-	//		MP.MObj.normal.push_back({ 0,0,1 });
+	//		MImg.MObj.tris.push_back({ red * 30,green * 30,blue * 30 });
+	//		MImg.MObj.color.push_back({ red,green,blue });
+	//		MImg.MObj.normal.push_back({ 0,0,1 });
 
 	//	}
 	//}
 
-	//M_ECS.AddObj(OTP, MP);
+	//M_ECS.AddObj(PImg, MImg);
 
 	//stbi_image_free(data);
 

@@ -149,6 +149,29 @@ void render::Render()
 
 
 	(*M_ECS).reg.view<Mesh, Transform>().each([&](auto entity, Mesh& Obj, Transform& T) {
+		
+		Mat4f Rotationx(1.0f, 0.0f, 0.0f, 0.0f,
+						0.0f, cosf(T.Ang.x), -sinf(T.Ang.x), 0.0f,
+						0.0f, sinf(T.Ang.x), cosf(T.Ang.x), 0.0f,
+						0.0f, 0.0f, 0.0f, 1.0f);
+		Mat4f Rotationy(cosf(T.Ang.y), 0.0f, -sinf(T.Ang.y), 0.0f,
+						0.0f, 1.0f, 0.0f, 0.0f,
+						sinf(T.Ang.y), 0.0f, cosf(T.Ang.y), 0.0f,
+						0.0f, 0.0f, 0.0f, 1.0f);
+		Mat4f Rotationz(cosf(T.Ang.z), -sinf(T.Ang.z), 0.0f, 0.0f,
+						sinf(T.Ang.z), cosf(T.Ang.z), 0.0f, 0.0f,
+						0.0f, 0.0f, 1.0f, 0.0f,
+						0.0f, 0.0f, 0.0f, 1.0f);
+
+		Mat4f Translation(T.Scale.x, 0.0f, 0.0f, T.Pos.x,
+						  0.0f, T.Scale.y, 0.0f, T.Pos.y,
+						  0.0f, 0.0f, T.Scale.z, T.Pos.z,
+						  0.0f, 0.0f, 0.0f, 1.0f);
+
+
+		FinalMatrix = FinalMatrix * Translation * Rotationx * Rotationy * Rotationz;
+
+
 		int SizeArr = Obj.MObj.tris.size();
 		int gWorldLocation = glGetUniformLocation(prog[0], "gWorld");
 		glUniformMatrix4fv(gWorldLocation, 1, GL_TRUE, &FinalMatrix.m[0][0]);

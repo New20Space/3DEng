@@ -84,6 +84,16 @@ bool Loader::Load(mesh& MObj, string sFilename)
 			s >> junk >> v.x >> v.y >> v.z;
 
 			verts.push_back(v);
+			
+			//defining mesh boundaries
+			if (MObj.Max.x < v.x)MObj.Max.x = v.x;
+			if (MObj.Max.y < v.y)MObj.Max.y = v.y;
+			if (MObj.Max.z < v.z)MObj.Max.z = v.z;
+
+			if (MObj.Min.x > v.x)MObj.Min.x = v.x;
+			if (MObj.Min.y > v.y)MObj.Min.y = v.y;
+			if (MObj.Min.z > v.z)MObj.Min.z = v.z;
+
 		}
 		if ((line[0] == 'u') && (line[1] == 's') && (line[2] == 'e'))
 		{

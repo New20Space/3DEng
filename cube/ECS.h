@@ -19,6 +19,7 @@ struct Transform
 	Vec3f Pos = { 0.0f,0.0f,0.0f };
 	Vec3f Vel = { 0.0f,0.0f,0.0f };
 	Vec3f Ang = { 0.0f,0.0f,0.0f };
+	Vec3f Scale = { 1.0f,1.0f,1.0f };
 
 };
 
@@ -30,6 +31,9 @@ struct ch3
 };
 struct mesh
 {	
+	Vec3f Max = { 0,0,0 };  //mesh boundaries
+	Vec3f Min = { 0,0,0 };
+
 	vector<Vec3f> tris;
 	//Texture* pTex;
 	vector<Vec2f> texcoord;
