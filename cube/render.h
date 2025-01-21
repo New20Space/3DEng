@@ -34,7 +34,7 @@ private:
 	
 	Vec3f* Tpos;
 	Vec3f* Ang;
-
+	Vec3f* LightPos;
 	int SW, SH;
 	Mat4f FinalMatrix;
 	std::vector<unsigned int> prog;

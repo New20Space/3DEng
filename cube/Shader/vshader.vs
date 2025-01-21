@@ -7,6 +7,8 @@ layout (location = 2) in vec3 Normal;
 out vec3 Color;
 
 uniform mat4 gWorld;
+uniform mat4 gNormal;
+uniform vec3 LightPos;
 uniform float f;
 
 
@@ -19,25 +21,6 @@ uniform float sc;
 
 void main()
 {
-   
-
-  
-
-
-
-
-
-
-
-
-
-    //vec3 lPos = vec3(100,100,100);
-    //vec3 L = normalize(lPos-Position.xyz);
-
-    
-   // vec3 dif =vec3(dot(L,Normal),dot(L,Normal),dot(L,Normal));
-   
-    //Color = (dif+1)*0.2+Col*0.6;//mix(vec3(1,1,1),,exp(-0.2)) ;
 
     Color = Col;
 

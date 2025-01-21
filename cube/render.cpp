@@ -115,6 +115,8 @@ void render::Init(ECS* M_ECS1) {
 		ReadF(Set.VShader.c_str(), vF);
 		ReadF(Set.FShader.c_str(),fF);
 		
+		LightPos = &(Set.LightPos);
+		
 	});
 	
 	prog.push_back(CreateShader(vF, fF));
@@ -169,12 +171,20 @@ void render::Render()
 						  0.0f, 0.0f, 0.0f, 1.0f);
 
 
-		FinalMatrix = FinalMatrix * Translation * Rotationx * Rotationy * Rotationz;
+		Mat4f LFinalMatrix = FinalMatrix * Translation * Rotationx * Rotationy * Rotationz;
+		Mat4f LFinalMatrixNormal =  Rotationx * Rotationy * Rotationz;
 
 
 		int SizeArr = Obj.MObj.tris.size();
 		int gWorldLocation = glGetUniformLocation(prog[0], "gWorld");
-		glUniformMatrix4fv(gWorldLocation, 1, GL_TRUE, &FinalMatrix.m[0][0]);
+		glUniformMatrix4fv(gWorldLocation, 1, GL_TRUE, &LFinalMatrix.m[0][0]);
+
+		int gWorldLocationNormal = glGetUniformLocation(prog[0], "gNormal");
+		glUniformMatrix4fv(gWorldLocationNormal, 1, GL_TRUE, &LFinalMatrixNormal.m[0][0]);
+
+		Vec3f LP = *LightPos;
+		float gLightPos  = glGetUniformLocation(prog[0], "LightPos");
+		glUniform3fv(gLightPos, 1, &(*LightPos).x);
 
 		int numv;
 		switch (Obj.primitive)

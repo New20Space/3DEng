@@ -13,9 +13,16 @@
 #include <GL/glew.h>
 #include "Perlin_Noise.h"
 
+enum sMove
+{
+	invariable,
+	variable
 
+};
 struct Transform
 {
+	sMove State = variable;
+
 	Vec3f Pos = { 0.0f,0.0f,0.0f };
 	Vec3f Vel = { 0.0f,0.0f,0.0f };
 	Vec3f Ang = { 0.0f,0.0f,0.0f };
@@ -30,7 +37,8 @@ struct ch3
 	float Col[3];
 };
 struct mesh
-{	
+{
+
 	Vec3f Max = { 0,0,0 };  //mesh boundaries
 	Vec3f Min = { 0,0,0 };
 
@@ -57,8 +65,11 @@ struct Ñamera
 	int S_W, S_H;
 	std::string VShader;
 	std::string FShader;
+	
+	Vec3f LightPos = { 100,100,100 };
 
 };
+
 
 
 class ECS

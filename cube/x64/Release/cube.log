@@ -1,20 +1,22 @@
 ﻿  Main.cpp
-D:\Main\C++\Cube Engine 3\cube\ECS.h(42,29): warning C4305: аргумент: усечение из "double" в "float"
-D:\Main\C++\Cube Engine 3\cube\ECS.h(42,25): warning C4305: аргумент: усечение из "double" в "float"
-D:\Main\C++\Cube Engine 3\cube\ECS.h(42,21): warning C4305: аргумент: усечение из "double" в "float"
-D:\Main\C++\Cube Engine 3\cube\Main.cpp(97,9): warning C4305: инициализация: усечение из "double" в "float"
-D:\Main\C++\Cube Engine 3\cube\Main.cpp(98,9): warning C4305: инициализация: усечение из "double" в "float"
-D:\Main\C++\Cube Engine 3\cube\Main.cpp(99,9): warning C4305: инициализация: усечение из "double" в "float"
-D:\Main\C++\Cube Engine 3\cube\Main.cpp(100,9): warning C4305: инициализация: усечение из "double" в "float"
-D:\Main\C++\Cube Engine 3\cube\Main.cpp(108,38): warning C4305: аргумент: усечение из "double" в "float"
-D:\Main\C++\Cube Engine 3\cube\Main.cpp(109,38): warning C4305: аргумент: усечение из "double" в "float"
-D:\Main\C++\Cube Engine 3\cube\Main.cpp(110,38): warning C4305: аргумент: усечение из "double" в "float"
-D:\Main\C++\Cube Engine 3\cube\Main.cpp(111,38): warning C4305: аргумент: усечение из "double" в "float"
-D:\Main\C++\Cube Engine 3\cube\Main.cpp(171,22): warning C4305: аргумент: усечение из "double" в "float"
-D:\Main\C++\Cube Engine 3\cube\Main.cpp(171,16): warning C4305: аргумент: усечение из "double" в "float"
+D:\Main\C++\Cube Engine 3\cube\ECS.h(50,29): warning C4305: аргумент: усечение из "double" в "float"
+D:\Main\C++\Cube Engine 3\cube\ECS.h(50,25): warning C4305: аргумент: усечение из "double" в "float"
+D:\Main\C++\Cube Engine 3\cube\ECS.h(50,21): warning C4305: аргумент: усечение из "double" в "float"
+D:\Main\C++\Cube Engine 3\cube\Main.cpp(61,9): warning C4305: инициализация: усечение из "double" в "float"
+D:\Main\C++\Cube Engine 3\cube\Main.cpp(62,9): warning C4305: инициализация: усечение из "double" в "float"
+D:\Main\C++\Cube Engine 3\cube\Main.cpp(73,38): warning C4305: аргумент: усечение из "double" в "float"
+D:\Main\C++\Cube Engine 3\cube\Main.cpp(74,36): warning C4305: аргумент: усечение из "double" в "float"
+D:\Main\C++\Cube Engine 3\cube\Main.cpp(75,38): warning C4305: аргумент: усечение из "double" в "float"
+D:\Main\C++\Cube Engine 3\cube\Main.cpp(76,41): warning C4305: аргумент: усечение из "double" в "float"
+D:\Main\C++\Cube Engine 3\cube\Main.cpp(76,34): warning C4305: аргумент: усечение из "double" в "float"
+D:\Main\C++\Cube Engine 3\cube\Main.cpp(103,17): warning C4305: аргумент: усечение из "double" в "float"
+D:\Main\C++\Cube Engine 3\cube\Main.cpp(103,11): warning C4305: аргумент: усечение из "double" в "float"
+D:\Main\C++\Cube Engine 3\cube\Main.cpp(228,22): warning C4305: аргумент: усечение из "double" в "float"
+D:\Main\C++\Cube Engine 3\cube\Main.cpp(228,16): warning C4305: аргумент: усечение из "double" в "float"
+D:\Main\C++\Cube Engine 3\cube\Main.cpp(235,19): warning C4305: аргумент: усечение из "double" в "float"
   Создание кода
-  7 of 3707 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+  3 of 3730 functions (<0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    18 functions had inline decision re-evaluated but remain unchanged
+    16 functions had inline decision re-evaluated but remain unchanged
   Создание кода завершено
   cube.vcxproj -> D:\Main\C++\Cube Engine 3\x64\Release\cube.exe

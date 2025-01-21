@@ -55,36 +55,83 @@ ECS M_ECS;
 render M_R;
 Loader M_L;
 
-void ApplyNoise(Mesh& MP,int num_vertex) {//to a plane
-	float MW = MP.MObj.Max.x - MP.MObj.Min.x;
-	float MH = MP.MObj.Max.z - MP.MObj.Min.z;
 
-	float r_w = MW / MP.Noise.Width; //ratio 
-	float r_h = MH / MP.Noise.Height;
 
-	float s_w = MP.MObj.Min.x;//shift
-	float s_h = MP.MObj.Min.z;
+float a = 0;
+float x = PI / 2 ;
+float y = PI / 2;
+float z = 0 ;
 
-	float x = (MP.MObj.tris[num_vertex].x - s_w)/r_w;
-	float y = (MP.MObj.tris[num_vertex].z - s_h) / r_h;
 
-	float N = MP.Noise.Get_Noise(x, y);
+void MImGui() {
 
-	float red = 1 - N;
-	float green = 1 - N;
-	float blue =  1;
-	MP.MObj.color[num_vertex] = { red,green,blue };
-	MP.MObj.tris[num_vertex].y = N;
+	
+
+	ImGui::Begin("Hello, world!");                          // Create a window called "Hello, world!" and append into it.
+
+	
+	ImGui::SliderFloat("A", &a, 0.0f, PI*2);            // Edit 1 float using a slider from 0.0f to 1.0f
+	ImGui::SliderFloat("x", &x, 0.0f, PI);
+	ImGui::SliderFloat("y", &y, 0.0f, PI*2);            
+	ImGui::SliderFloat("z", &z, -PI / 2, PI/2);
+
+
+	ImGui::End();
+}
+float  ApplyNoise(Vec3f Pos,Vec3f Max, Vec3f Min, Perlin_Noise& Noise) {//to a plane
+	float MW = Max.x - Min.x;
+	float MH = Max.z - Min.z;
+
+	float r_w = MW / Noise.Width; //ratio 
+	float r_h = MH / Noise.Height;
+
+	float s_w = Min.x;//shift
+	float s_h = Min.z;
+
+	float x = (Pos.x - s_w) / r_w;
+	float y = (Pos.z - s_h) / r_h;
+
+	return Noise.Get_Noise(x, y);
+
 }
 
 void Start() {
 	Perlin_Noise* Map;
+
+	srand(860);
+	Perlin_Noise Col;
+	Col.Init(15.1, 15.1);
+
 	M_ECS.reg.view<Mesh>().each([&](auto entity, Mesh& MP) {
 		if (MP.A_Noise) {
 			
-			for (int i = 0; i < MP.MObj.color.size(); i++)
+			for (int num_vertex = 0; num_vertex < MP.MObj.color.size(); num_vertex++)
 			{	
-				ApplyNoise(MP, i);
+				
+				float N= ApplyNoise(MP.MObj.tris[num_vertex], MP.MObj.Max,MP.MObj.Min,MP.Noise);
+				
+				MP.MObj.tris[num_vertex].y = N;
+
+				if (((num_vertex + 1) % 3) == 0)
+				{
+
+					Vec3f  curnorm, line1, line2;
+					line1 = MP.MObj.tris[num_vertex - 1] - MP.MObj.tris[num_vertex - 2];
+					line2 = MP.MObj.tris[num_vertex] - MP.MObj.tris[num_vertex - 2];
+
+
+					curnorm = line1 * line2;
+					curnorm.Normalize();
+					MP.MObj.normal[num_vertex - 2] = curnorm;
+					MP.MObj.normal[num_vertex - 1] = curnorm;
+					MP.MObj.normal[num_vertex] = curnorm;
+				}
+				float C = ApplyNoise(MP.MObj.tris[num_vertex], MP.MObj.Max, MP.MObj.Min, Col);
+				float red   = C;
+				float green = 1;
+				float blue  = C;
+				MP.MObj.color[num_vertex] = { red,green,blue };
+
 			}
 
 			Map = &MP.Noise;
@@ -94,26 +141,6 @@ void Start() {
 		});
 
 }
-float a = PI / 4 + PI;
-float b = PI / 4 + PI / 2 + PI;
-float c = PI / 4;
-float d = PI / 4 + PI / 2;
-
-void MImGui() {
-
-	
-
-	ImGui::Begin("Hello, world!");                          // Create a window called "Hello, world!" and append into it.
-
-	ImGui::SliderFloat("A", &a, 0.0f, PI*2);            // Edit 1 float using a slider from 0.0f to 1.0f
-	ImGui::SliderFloat("B", &b, 0.0f, PI*2);            
-	ImGui::SliderFloat("C", &c, 0.0f, PI*2);            
-	ImGui::SliderFloat("D", &d, 0.0f, PI*2);            
-
-
-	ImGui::End();
-}
-
 void main_dis() {
 	if (T.fr1 - T.fr2 >= 50)                        //only draw 20 frames/second
 	{
@@ -130,6 +157,36 @@ void main_dis() {
 
 
 		MImGui();
+
+
+
+
+		M_ECS.reg.view<Mesh,Transform>().each([&](auto entity, Mesh& MP,Transform& T) {
+
+			if (T.State==variable)
+			{
+			if (MP.A_Noise!=1) {
+				
+				T.Ang = { 0,a, 0};
+			}
+
+			}
+			else if(T.State == invariable) {
+				M_ECS.reg.view<Ñamera, Transform>().each([&](auto entity, Ñamera& Ñam, Transform& Tr) {
+					
+					T.Pos = { 50 * sin(z), 50 * sin(x) *cos(z),50 * cos(x) };
+
+					Ñam.LightPos = T.Pos;
+					});
+
+			}
+			
+
+			});
+
+
+
+
 
 		// Rendering
 		ImGui::Render();
@@ -161,8 +218,8 @@ void ECS_Init()
 
 
 	Transform OTP;
-	OTP.Scale = { 5.0,3.0,5.0 };
-
+	OTP.Scale = { 5.0,5.0,5.0 };
+	//OTP.Ang = { 0.0,PI / 4,0.0 };
 	Mesh MP;
 	MP.Path = "Model/plane.obj";
 
@@ -175,10 +232,18 @@ void ECS_Init()
 
 
 	Transform OT;
+	OT.Ang = { 0.0,PI/4,0.0 };
 	Mesh M;
 	M.Path = "Model/din.obj";
 
 	M_ECS.AddObj(OT,M);
+
+	Transform LT;
+	LT.Pos = { 100,100,100 };
+	LT.State = invariable;
+	Mesh ML;
+	ML.Path = "Model/Suz.obj";
+	M_ECS.AddObj(LT, ML);
 
 	
 

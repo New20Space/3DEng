@@ -1,5 +1,6 @@
 #include "ECS.h"
 
+
 void ECS::Add—amera(Transform T,—amera CS) {
 	entt::entity C = reg.create();
 
@@ -13,3 +14,4 @@ void ECS::AddObj(Transform T,Mesh M) {
 	reg.emplace<Mesh>(O, M);
 
 }
+
